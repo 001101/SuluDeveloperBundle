@@ -1,0 +1,25 @@
+{
+    "name": "sulu/developer-bundle",
+    "type": "sulu-bundle",
+    "description": "The Sulu Bundle for developers",
+    "license": "MIT",
+    "keywords": [
+        "sulu",
+        "developer"
+    ],
+    "authors": [
+        {
+            "name": "Sulu Community",
+            "homepage": "https://github.com/sulu-io/SuluDeveloperBundle/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sulu\\Bundle\\DeveloperBundle": ""
+        }
+    },
+    "target-dir": "Sulu/Bundle/DeveloperBundle"
+}

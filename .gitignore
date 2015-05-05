@@ -1,0 +1,8 @@
+/vendor
+
+# .DS_Store
+.DS_Store
+
+# IDEs
+.idea/*
+*.iml
