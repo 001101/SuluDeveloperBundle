@@ -8,7 +8,7 @@ Installation
 ------------
 
 ````bash
-$ composer require sulu/developer-bundle
+$ composer require --dev sulu/developer-bundle:dev-master
 ````
 
 Add it to your application kernel:
