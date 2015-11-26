@@ -113,7 +113,6 @@ class LoadContactData implements FixtureInterface, OrderedFixtureInterface
         $contact->setLastName($faker->lastName);
         $contact->setPosition('CEO');
         $contact->setSalutation("Hello");
-        $contact->setDisabled(0);
         $contact->setTitle($this->titles[rand(0, 2)]);
         $contact->addPhone($phone);
         $contact->addEmail($email);
@@ -146,6 +145,7 @@ class LoadContactData implements FixtureInterface, OrderedFixtureInterface
     private function createAddress($faker, $manager)
     {
         $address = new Address();
+        $address->setTitle('');
         $address->setStreet($faker->streetName);
         $address->setNumber($number = $faker->buildingNumber);
         $address->setZip($zip = $faker->postcode);
