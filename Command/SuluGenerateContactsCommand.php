@@ -126,7 +126,7 @@ class SuluGenerateContactsCommand extends ContainerAwareCommand
             $contactAddress = new ContactAddress();
             $contactAddress->setAddress($address);
             $contactAddress->setContact($contact);
-            $contactAddress->setMain(true);
+            $contactAddress->setMain($i === 0);
             $contact->addContactAddress($contactAddress);
             $address->addContactAddress($contactAddress);
             $this->entityManager->persist($contactAddress);

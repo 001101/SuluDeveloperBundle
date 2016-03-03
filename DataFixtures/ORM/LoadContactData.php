@@ -126,7 +126,7 @@ class LoadContactData implements FixtureInterface, OrderedFixtureInterface
             $contactAddress = new ContactAddress();
             $contactAddress->setAddress($address);
             $contactAddress->setContact($contact);
-            $contactAddress->setMain(true);
+            $contactAddress->setMain($i === 0);
             $manager->persist($contactAddress);
             $contact->addContactAddress($contactAddress);
             $address->addContactAddress($contactAddress);
